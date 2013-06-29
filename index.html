@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+	<title>Analytics.js Event Tracking</title>
+
+	<script type="text/javascript" src="js/jquery.analytics-event-tracking.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			$('body').analyticsEventTracking();
+		});
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-XXXX-Y');
+	ga('send', 'pageview');
+
+	</script>
+	<!-- End Google Analytics -->
+</head>
+<body>
+	<form action="" method="post">
+		<label for="username">Username:</label>
+		<input type="email" name="username" value="" id="username" class="track-blur" data-category="login" data-action="completed" data-label="username" />
+
+		<label for="password">Password:</label>
+		<input type="password" name="password" value="" id="password" class="track-blur" data-category="login" data-action="completed" data-label="password" />
+
+		<input type="submit" value="Log in" class="track" data-category="login" data-action="click" data-label="button" data-value="2" />
+	</form>
+</body>
+</html>
