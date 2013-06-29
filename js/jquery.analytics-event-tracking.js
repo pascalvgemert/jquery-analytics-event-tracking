@@ -14,7 +14,7 @@
     $.fn.analyticsEventTracking = function(options) 
     {
         var settings = $.extend({
-            selector:  		'.track',
+            selector:  		    '.track',
             default_category: 	'General'
         }, options);
 
