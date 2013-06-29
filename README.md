@@ -3,7 +3,12 @@ jquery-analytics-event-tracking
 
 JQuery plugin for Event Tracking based on Universal Analytics (analytics.js)
 
-**IN PROGRESS**
+***! UNDER DEVELOPMENT !***
+
+NOTICE
+------
+
+Only works with the new Analytics code: Universal Analytics  (analytics.js)***
 
 Usage
 -----
@@ -24,6 +29,18 @@ To use events other than the 'click' event, extend the `.track` with one of the 
 * -focus `.track-focus` - tracks event on focus 
 * -blur `.track-blur` - tracks event on blur 
 * -mouseover `.track-mouseover` - tracks event on mouseover 
+
+Dependencies
+------------
+
+The plugin requires jQuery v1.7 (or higher). (HTML5 data attributes required)
+The plugin requires Google Analytics script with `ga' function. (analytics.js)
+
+Options
+-------
+
+* **selector** :    	    The selector of the elements to track (default: '.track')
+* **default_category** : 	The default category, when not provided as `date-category="category-name"` (default: 'General')
 
 Example
 -------
