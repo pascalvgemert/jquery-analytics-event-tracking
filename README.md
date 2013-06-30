@@ -29,6 +29,8 @@ To use events other than the 'click' event, extend the `.track` with one of the 
 * -focus `.track-focus` - tracks event on focus 
 * -blur `.track-blur` - tracks event on blur 
 * -mouseover `.track-mouseover` - tracks event on mouseover 
+* -change `.track-change` - tracks event on change
+* -completed `.track-completed` - tracks event on blur event when a value is set
 
 Dependencies
 ------------
