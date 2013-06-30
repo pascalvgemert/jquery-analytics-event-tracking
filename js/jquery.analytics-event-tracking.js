@@ -14,7 +14,7 @@
     $.fn.analyticsEventTracking = function(options) 
     {
         var settings = $.extend({
-            selector:  		    '.track',
+            selector:			'.track',
             default_category: 	'General'
         }, options);
 
@@ -39,17 +39,30 @@
 
 				_self.find(settings.selector + '-blur').on('blur', function(e)
 				{
-					_this.trackEvent('blur', $(this));
+					trackEvent('blur', $(this));
+				});
+
+				_self.find(settings.selector + '-complete').on('blur', function(e)
+				{
+					if($.trim($(this).val()) != '')
+					{
+						trackEvent('complete', $(this));
+					}
 				});
 
 				_self.find(settings.selector + '-focus').on('focus', function(e)
 				{
-					_this.trackEvent('focus', $(this));
+					trackEvent('focus', $(this));
 				});
 
 				_self.find(settings.selector + '-mouseover').on('mouseover', function(e)
 				{
-					_this.trackEvent('mouseover', $(this));
+					trackEvent('mouseover', $(this));
+				});
+
+				_self.find(settings.selector + '-change').on('change', function(e)
+				{
+					trackEvent('change', $(this));
 				});
 			};
 
