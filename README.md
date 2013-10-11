@@ -54,3 +54,8 @@ Example
 
         <input type="submit" value="Log in" class="track" data-category="login" data-action="click" data-label="button" data-value="2" />
     </form>
+
+Author
+-------
+Pascal van Gemert
+[http://pascalvangemert.nl/](http://pascalvangemert.nl/?ref=github)
