@@ -36,7 +36,7 @@ Dependencies
 ------------
 
 The plugin requires jQuery v1.7 (or higher). (HTML5 data attributes required)
-The plugin requires Google Analytics script with `ga' function. (analytics.js)
+The plugin requires Google Analytics script with `ga` function. (analytics.js)
 
 Options
 -------
