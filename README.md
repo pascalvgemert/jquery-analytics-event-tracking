@@ -13,7 +13,7 @@ Only works with the new Analytics code: Universal Analytics  (analytics.js)
 Usage
 -----
 
-Use `$('body').analyticsEventTracker();` to initialize the plugin. 
+Use `$('body').analyticsEventTracking();` to initialize the plugin. 
 
 All elements in the body tag which contain the class `.track` will be tracked.
 
