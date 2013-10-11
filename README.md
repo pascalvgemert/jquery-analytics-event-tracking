@@ -8,7 +8,7 @@ JQuery plugin for Event Tracking based on Universal Analytics (analytics.js)
 NOTICE
 ------
 
-Only works with the new Analytics code: Universal Analytics  (analytics.js)***
+Only works with the new Analytics code: Universal Analytics  (analytics.js)
 
 Usage
 -----
