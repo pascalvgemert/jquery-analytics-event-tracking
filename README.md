@@ -15,10 +15,10 @@ Use `$('body').analyticsEventTracking();` to initialize the plugin.
 
 All elements in the body tag which contain the class `.track` will be tracked.
 
-Add `date-category="category-name"` to specify the category (default: 'General')  
-Add `date-action="click"` to specify the action (default: 'click')  
-Add `date-label="label-name"` to specify the label (default: '')  
-Add `date-value="1"` to specify the value (default: 1)
+Add `data-category="category-name"` to specify the category (default: 'General')  
+Add `data-action="click"` to specify the action (default: 'click')  
+Add `data-label="label-name"` to specify the label (default: '')  
+Add `data-value="1"` to specify the value (default: 1)
 
 Advanced usage
 -----
